@@ -1,0 +1,31 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>Número de Factura</th>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Descuento</th>
+            <th>Monto Final</th>
+            <th>Producto</th>
+            <th>Precio de Venta</th>
+            <th>Cantidad Vendida</th>
+            <th>Monto Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for venta in ventas %}
+        <tr>
+            <td>{{ venta.venta.numero_factura }}</td>
+            <td>{{ venta.venta.fecha }}</td>
+            <td>{{ venta.venta.cliente.nombre }}</td>
+            <td>{{ venta.venta.descuento }}</td>
+            <td>{{ venta.venta.monto_final }}</td>
+            <td>{{ venta.producto.nombre }}</td>
+            <td>{{ venta.precio_venta }}</td>
+            <td>{{ venta.cantidad_vendida }}</td>
+            <td>{{ venta.monto_total }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+

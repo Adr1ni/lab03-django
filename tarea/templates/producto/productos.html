@@ -1,0 +1,5 @@
+{% for p in productos %}
+<ul>
+    <li><a href="{% url 'tarea:producto' p.id %}">{{p}}</a></li>
+</ul>
+{% endfor %}

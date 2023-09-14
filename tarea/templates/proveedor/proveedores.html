@@ -1,0 +1,22 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th>Pagina web</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for pro in proveedores %}
+        <tr>
+            <td>{{ pro.codigo }}</td>
+            <td>{{ pro.nombre }}</td>
+            <td>{{ pro.direccion }}</td>
+            <td>{{ pro.telefono }}</td>
+            <td>{{ pro.pagina_web }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

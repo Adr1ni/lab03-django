@@ -1,0 +1,5 @@
+{% for c in clientes %}
+<ul>
+    <li><a href="{% url 'tarea:cliente' c.id %}">{{c}}</a></li>
+</ul>
+{% endfor %}
